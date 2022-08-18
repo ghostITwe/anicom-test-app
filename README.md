@@ -46,6 +46,13 @@
   sail artisan migrate --seed
 ```
 
+Чтобы корректно отображались стили нужно выполнить команду
+
+```bash
+    ./vendor/bin/sail npm i 
+    ./vendor/bin/sail npm run dev
+```
+
 
 ## Переменные среды
 
