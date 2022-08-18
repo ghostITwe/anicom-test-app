@@ -8,6 +8,12 @@ use Kalnoy\Nestedset\NodeTrait;
 
 class Category extends Model
 {
+
+    protected $fillable = [
+      'title',
+      'parent_id'
+    ];
+
     use HasFactory;
     use NodeTrait;
 

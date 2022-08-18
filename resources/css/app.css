@@ -1,44 +1,15 @@
-* {
-    margin: 0;
-    padding: 0;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.centered-page {
+    @apply grid gap-4 bg-gray-300 justify-center items-center min-h-screen;
 }
 
-.relative {
-    position: relative;
+.centered-form {
+    @apply bg-white border-2 grid gap-4 justify-center rounded-xl shadow-lg;
 }
 
-.bg-gray {
-    background-color: #D9D9D9;
-}
-
-.grid {
-    display: grid;
-}
-
-.flex {
-    display: flex;
-}
-
-.flex-col {
-    flex-direction: column;
-}
-
-.items-center {
-    align-items: center;
-}
-
-.max-w-sm {
-    max-width: 24rem;
-}
-
-.min-h-screen {
-    min-height: 100vh;
-}
-
-.grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.gap-2 {
-    gap: 0.5rem;
+.input {
+    @apply border-2 rounded-xl p-2;
 }
